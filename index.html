@@ -8,22 +8,23 @@
     <script src="app.js" defer></script>
   
 </head>
-<form method='post' action='https://jooble.org/api/01893441-23a3-40ae-b5d1-ab9b1ccad606'>
-    <input type="text" name="search" placeholder="Position">
-    <input type="text" name="search" placeholder="Location (e.g. Denver,CO or ZIP">
-    <select name="radius">
-        <option value="" disabled selected>Choose Radius (in miles) of Job Location</option>
-        <option value=5>5</option>
-        <option value=10>10</option>
-        <option value=15>15</option>
-        <option value=20>20</option>
-        <option value=25>25</option>
-        <option value=50>50</option>
-        <option value=100>100+</option>
-    </select>
-    <input type="submit" value="Search">
-</form>
+<h1>Our Version of Jooble</h1>
+    <form class="container" method='post' action='https://jooble.org/api/01893441-23a3-40ae-b5d1-ab9b1ccad606'>
+        <input type="text" name="search" placeholder="Position">
+        <input type="text" name="search" placeholder="Location (e.g. Denver,CO or ZIP">
+        <select name="radius">
+            <option value="" disabled selected>Choose Radius (in miles) of Job Location</option>
+            <option value=5>5</option>
+            <option value=10>10</option>
+            <option value=15>15</option>
+            <option value=20>20</option>
+            <option value=25>25</option>
+            <option value=50>50</option>
+            <option value=100>100+</option>
+        </select>
+        <input type="submit" value="Search">
+    </form>
+    <main class="cards"></main>
 <body>
-    <h1>Jobs In Your Area</h1>
 </body>
 </html>
