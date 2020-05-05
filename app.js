@@ -8,4 +8,6 @@ fetch("http://localhost:3000/jobs")
             jobLocation.innerText = job.location
 			document.body.append(jobTitle, jobLocation)
 		})
-	})
+    })
+    
+    
