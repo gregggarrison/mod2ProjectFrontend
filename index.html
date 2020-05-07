@@ -8,27 +8,52 @@
     <script src="app.js" defer></script>
   
 </head>
-<h1>Our Version of Jooble</h1>
+<body>
+    <header>
+        <div id="header">
+            <div id="wrap">
+                <h2 id="logo">JobFinder</h2>
+                <ul id="nav-links">
+                    <li>
+                        <a href="/">All Jobs</a>
+                    </li>
+                    <li>
+                        <a href="account.html">My Account</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">See Favorites</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login/Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <form class="pure-form">
+        <fieldset>
+            <legend>Search JobFinder</legend>
+            <input type="text" name="search" placeholder="Desired Job">
+            <input type="text" name="search" placeholder="Location">
+            <select name="radius">
+                <option value="" disabled selected>Choose Radius (in miles) of Job Location</option>
+                <option value=5>5</option>
+                <option value=10>10</option>
+                <option value=15>15</option>
+                <option value=20>20</option>
+                <option value=25>25</option>
+                <option value=50>50</option>
+                <option value=100>100+</option>
+            </select>
+            <input type="submit" value="Search">
+        </fieldset>
+    </form>
     <form class="container" method='post' action='https://jooble.org/api/01893441-23a3-40ae-b5d1-ab9b1ccad606'>
-        <input type="text" name="search" placeholder="Position">
-        <input type="text" name="search" placeholder="Location (e.g. Denver,CO or ZIP">
-        <select name="radius">
-            <option value="" disabled selected>Choose Radius (in miles) of Job Location</option>
-            <option value=5>5</option>
-            <option value=10>10</option>
-            <option value=15>15</option>
-            <option value=20>20</option>
-            <option value=25>25</option>
-            <option value=50>50</option>
-            <option value=100>100+</option>
-        </select>
-        <input type="submit" value="Search">
     </form>
     <div class="flip-card">
         <div class="flip-card-inner">
-            
+    
         </div>
     </div>
-<body>
 </body>
 </html>
